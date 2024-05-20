@@ -9,7 +9,7 @@ public  class SalesContract extends Contract{
 
     @Override
     public void getTotalPrice() {
-
+        getVehicleSold().getPrice();
     }
 
     @Override
