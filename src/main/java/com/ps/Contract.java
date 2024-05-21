@@ -6,6 +6,8 @@ public abstract class  Contract {
     private String  customerName;
     private String  customerEmail;
     private Vehicle vehicleSold;
+    private double totalPrice;
+    private double monthlyPayment;
 
 
     // constructor
@@ -55,11 +57,11 @@ public abstract class  Contract {
 
     //getTotalPrice()
 
-  public abstract void getTotalPrice();
+  public abstract double getTotalPrice();
 
 
     //getMonthlyPayment()
 
-    public abstract void getMonthlyPayment();
+    public abstract double getMonthlyPayment();
 
 }

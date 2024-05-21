@@ -2,29 +2,39 @@ package com.ps;
 
 public class LeaseContract extends Contract{
 
+    private double expectedEndingValue;
+    private double leaseFee;
 
     public LeaseContract(String date, String customerName, String customerEmail, Vehicle vehicleSold) {
         super(date, customerName, customerEmail, vehicleSold);
+        this.expectedEndingValue = vehicleSold.getPrice() * 0.5;
+        this.leaseFee = vehicleSold.getPrice()* 0.07;
     }
 
     @Override
-    public void getTotalPrice() {
+    public double getTotalPrice() {
 
+        return getExpectedEndingValue() + getLeaseFee();
     }
 
     @Override
-    public void getMonthlyPayment() {
+    public double getMonthlyPayment() {
 
+        Vehicle vehicle = getVehicleSold();
+        double loanAmount = vehicle.getPrice();
+        double monthlyInterestRate = 0.04/12;
+        int monthlyLoanTerm = 36;
+        double exponent = Math.pow(1 + monthlyInterestRate, monthlyLoanTerm);
+        double paymentPerMonth = (loanAmount * monthlyInterestRate * exponent)/ (exponent - 1);
+
+        return paymentPerMonth;
     }
 
-    // Private int LeaseFee;
+   public double getExpectedEndingValue(){
+        return expectedEndingValue;
+   }
 
-    // get superclass constructor
-    // need original price
-
-    //override getTotalPrice()
-    // 7% * original price
-
-    // override getMonthlyPayment()
-    // 4.0% * 36
+   public double getLeaseFee(){
+        return leaseFee;
+   }
 }
