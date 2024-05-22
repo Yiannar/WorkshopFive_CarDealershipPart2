@@ -122,4 +122,14 @@ public class Dealership {
                 ", phone='" + phone + '\'' +
                 '}';
     }
+
+    public Vehicle getVehiclesByVin(int vehicleVin){
+        for(Vehicle vehicle: this.inventory) {
+            if(vehicle.getVin() == vehicleVin){
+                return vehicle;
+            }
+        }
+        return null;
+    }
+
 }
