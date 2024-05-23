@@ -1,16 +1,39 @@
-# WORKSHOP FIVE CAR DEALERSHIP PART 2.
 
+# WORKSHOP FIVE CAR DEALERSHIP PART 2
 
-## Understanding the problem
+## Overview
 
-- Inputs
-    - User input
+This project is a Command-Line Interface (CLI) application for a car dealership. It allows users to view, add, and remove vehicles, as well as filter vehicles by various criteria such as price, make and model, year, color, mileage, and type. 
+In this workshop I added more functionality that the user can now sell or lease a vehicle.
 
-- Output
-    - Command-Line Interface (CLI)
-    - Creating an application that allows the user to view all vehicles, get the vehicles by price, make and model, year, color, mileage, and type. The user can also add and remove a vehicle.
+## Features
 
-## Making a plan
+- View all vehicles
+- Filter vehicles by:
+  - Price range
+  - Make and model
+  - Year range
+  - Color
+  - Mileage range
+  - Type (e.g., sedan, truck, SUV, van)
+- Add new vehicles to the inventory
+- Remove vehicles from the inventory
+- Sell or Lease a Vehicle
+
+## Understanding the Problem
+
+### Inputs
+
+- User input through CLI
+
+### Outputs
+
+- Command-Line Interface (CLI) display of vehicle information based on user queries
+
+## Making a Plan
+
+### Pseudocode
+
 
 ```// Pseudocode
 
@@ -22,25 +45,33 @@
 
 // Third the user is given an option to exit the program.
 
-// After the prompt the user can select options 1-10 depending on what they are looking for 
+// After the prompt the user can select options 1-10 and 99 to quit the program depending on what they are looking for 
+
+// The User can also Sell or lease a vehicle by the vin number and it removes the vehicle from the inventory
+
+// The user would be asked for their first and last name and email address if they are financing or not and for the vehicle vin
 
 // The application will print to the CLI the result of the user options
 ```
 
+
+
+
+
+
+
+
 ## Developers Favorite Piece Of Code
 <details>
-<summary>Click to expand  </summary> 
-
-
-
+<summary>Click to expand  </summary>
 
 I also enjoyed adding Ascii code to my project I thought the car piece of code would complement the project and make it more fun.
 
-![carArt.png](carArt.png)
+![Car.png](Car.png)
 
-I also wanted to implement what we learned in class for unit testing and added some testing for the dealership file. I am happy that I did add it because I wanted to show importance to testing out the code and insuring accuracy.
+This if my favorite piece of code because it was a challenge for me due to trying to learn how to understand instanceof and I also had to understand how to pass the sales contract to contract in order to get all the information I needed. 
 
-
+![FavoritePiece.png](FavoritePiece.png)
 
 </details>
 
@@ -49,38 +80,11 @@ I also wanted to implement what we learned in class for unit testing and added s
 <details>
 <summary> Click to expand </summary>
 
-### Home Screen
-![homeScreen.png](homeScreen.png)
+### User input 
+![UserInput.png](UserInput.png)
 
-### Price
-![byPrice.png](byPrice.png)
-
-### Make and Model
-![byMakeandModel.png](byMakeandModel.png)
-
-### Year
-![byYear.png](byYear.png)
-
-### Color
-![byColor.png](byColor.png)
-
-### Mileage
-![byMileage.png](byMileage.png)
-
-#### Type
-![byType.png](byType.png)
-
-### Display all vehicles
-![byAll.png](byAll.png)
-
-### Add a new vehicle
-![addToData.png](addToData.png)
-
-### Remove a vehicle
-![removeFromData.png](removeFromData.png)
-
-### Exiting
-![exitingProgram.png](exitingProgram.png)
+### Updated file manager
+![Updatedfile.png](Updatedfile.png)
 
 </details>
 
